@@ -85,7 +85,6 @@ public class Main1 {
         System.out.print("El perimetro del circulo es: ");
         System.out.println(p);
 
-        */
 
         //Ejercicio 5
         var sc = new Scanner(System.in);
@@ -95,6 +94,49 @@ public class Main1 {
         double cambio = sc.nextDouble();
         double dolares = euros/cambio;
         System.out.println(euros +"€" + " son " + dolares + "$");
+
+
+        // Ejercicio 6
+        var sc = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0){
+            System.out.println("El numero " + num + " es par");
+        } else {
+            System.out.println("El numero " + num + " es impar");
+        }
+
+        // Ejercicio 7
+        var sc = new Scanner(System.in);
+        System.out.print("Escribe un numero: ");
+        int num1 = sc.nextInt();
+        System.out.print("Escribe otro numero: ");
+        int num2 = sc.nextInt();
+        int suma = num1 + num2;
+        System.out.println("La suma es " + suma);
+        int resta = num1 - num2;
+        System.out.println("La resta es " + resta);
+        int mult = num1 * num2;
+        System.out.println("La multiplicación es " + mult);
+        int div = num1 / num2;
+        System.out.println("La división es " + div);
+        int resto = num1 % num2;
+        System.out.println("El resto es " + resto);
+
+        */
+
+        //Ejercicio 10
+        var sc = new Scanner(System.in);
+        System.out.print("Escribe la distancia inicial: ");
+        int e0 = sc.nextInt();
+        System.out.print("Escribe la velocidad media: ");
+        int v = sc.nextInt();
+        System.out.print("Escribe el tiempo en mins: ");
+        int t = sc.nextInt();
+        int tiempo = t * 60;
+        int espacio = e0 + (v * tiempo);
+        System.out.println("La distancia ercorrida es; " + espacio + " metros");
 
 
 
